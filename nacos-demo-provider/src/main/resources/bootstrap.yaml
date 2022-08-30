@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: example
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.26.3.174:8848
+        file-extension: yaml
+        namespace: 4389c01c-a5c4-443a-93f6-8843c4b056b3
+        group: DEFAULT_GROUP

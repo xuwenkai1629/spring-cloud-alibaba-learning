@@ -1,0 +1,6 @@
+/.idea/
+/task-service/target/
+/openfeign-service/target/
+/nacos-demo-provider/target/
+/discovery-provider/discovery-provider.iml
+/discovery-consumer/discovery-consumer.iml

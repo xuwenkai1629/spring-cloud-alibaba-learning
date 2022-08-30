@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: openfeign-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.26.3.174:8848
+        file-extension: yaml
+        namespace: 4389c01c-a5c4-443a-93f6-8843c4b056b3
+        group: DEFAULT_GROUP
+        prefix: example
+      discovery:
+        server-addr: 172.26.3.174:8848
+        group: public-service
+    loadbalancer:
+      ribbon:
+        enabled: true
+server:
+  port: 8085
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 1000
+        read-timeout: 2000
+  okhttp:
+    enabled: true
+logging:
+  level:
+    org.xwk.feign.service.AccountService: debug

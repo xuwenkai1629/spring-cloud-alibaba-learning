@@ -1,0 +1,14 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: discovery-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.26.3.174:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
